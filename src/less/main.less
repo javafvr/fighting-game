@@ -1,0 +1,101 @@
+.stat{
+	height: 20px;
+	width: 100%;
+	display: flex;
+    justify-content: space-between;
+}
+
+.player{
+	color: #FFF;
+	margin: 20px;
+	width: 100px;
+		height: 20px;
+		border: 2px solid #fff;
+			        border-radius: 50px;
+		overflow: hidden;
+
+	.health{
+		width: 100px;
+		height: 20px;
+		background-color: red;
+	}	
+}
+
+.monster{
+	color: #FFF;
+	margin: 20px;
+	width: 100px;
+	height: 20px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	overflow: hidden;
+	transition: width 0.5s, ease-in;
+		
+	.health{
+		width: 100px;
+		height: 20px;
+		background-color: red;
+	}	
+}
+
+.boxing-ring{
+	display: flex;
+    justify-content: space-between;
+	margin-top: 400px;
+
+	.monster-figure{
+		position: relative;
+		padding: 50px;
+		width: 200px;
+		height: 300px;
+		cursor: pointer;
+		background-image: url('../img/monster.png');
+		background-repeat: no-repeat;
+        background-size: cover;
+        .number{
+        	color: #FFF;
+        	font-size: 30px;
+        	position: absolute;
+        	top: 0px;
+        	right: 0px;
+        }
+
+        &:hover{
+        	opacity:0.8;
+        }
+        
+	}
+
+	.player-figure{
+		position: relative;
+		padding: 50px;
+		width: 200px;
+		height: 300px;
+		background-image: url('../img/player.png');
+		background-repeat: no-repeat;
+        background-size: cover;
+        
+        .number{
+        	color: #FFF;
+        	font-size: 30px;
+        	position: absolute;
+        	top: -30px;
+        	right: 30%;
+        }
+	}
+
+
+}
+
+.bg-stage{
+	height: 960px;
+	background-image: url('../img/6.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.round{
+	font-size: 38px;
+	color: #fff;
+	font-weight: 700;
+}
